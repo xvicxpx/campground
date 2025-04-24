@@ -1,0 +1,7 @@
+services:
+  campground:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: campground
+    restart: unless-stopped

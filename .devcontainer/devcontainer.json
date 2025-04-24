@@ -1,0 +1,22 @@
+{
+    "build": {
+        "context": "..",
+        "dockerfile": "dockerfile"
+    },
+    "containerEnv": {
+        "PYTHONPYCACHEPREFIX": "/tmp/.cache/python"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.vscode-pylance",
+                "ms-python.python",
+                "ms-python.black-formatter",
+                "ms-ossdata.vscode-postgresql"
+            ],
+            "settings": {
+                "editor.formatOnSave": true
+            }
+        }
+    }
+}
